@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes De Operadores</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(223, 222, 209);
+        }
+        #requi > strong , form > strong{
+            color: #49A34E;
+        }
+        p#requi{
+            font-size:1.2rem ;
+            
+        }
+        #requi > strong{
+            color:#C63637;;
+        }
+        form{
+            width:500px ;
+            margin: auto;
+        }
+        form > fieldset > div {
+            margin-top: 10px;
+        }
+        form > fieldset > div > label{
+            color: #49A34E;
+            font-weight: bold;
+        }
+        form > fieldset > div > input#in1 , input#in2 {
+            width: 60%;
+        }
+        form > fieldset > input#ical {
+            background-color: #C63637;
+            color: white;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <h1>Secretaria Maria Peneira</h1>
+    <h2>Calculo de Media Escolar:</h2>
+    <p id="requi">Media Requisitada: <strong>6</strong> </p>
+    <Form>
+        <Fieldset>
+            
+            <Legend>NOTAS BIMESTRAIS</Legend>
+
+            <div>
+                <label for="b1">Primeiro Bimestre</label>
+                <input type="number" name="n1" id="in1" required step=".1">
+            </div>
+
+            <br>
+        
+            <div>
+                <label for="b2">Segundo Bimestre</label>
+                <input type="number" name="n2" id="in2" required step=".1">
+            </div>
+
+            <br>
+        
+            <input type="button" id="ical" value="Calcular" onclick="somar()">
+
+        </Fieldset>
+    </Form>
+
+    <p id="isoma"> Você Esta...</p>
+    
+    <script>
+        function somar(){
+        var pri  =  window.document.querySelector("#in1")
+        var seg  =  document.querySelector("#in2")
+        var soma = window.document.querySelector("#isoma") 
+            
+        //Nâo Entendi mt bem porem e necessario;
+        var pri = Number(pri.value)
+        var seg = Number(seg.value)
+
+
+        var med = (pri + seg)/2
+        
+
+        if (med < 6){
+            res = "Reprovado"  
+            soma.style.color = 'red'        
+        }else{
+            res = "Aprovado"  
+            soma.style.color = '#49A34E'
+        }
+        
+        
+        soma.innerHTML = `Você Esta <strong >${res}</strong>.`
+        }
+    </script>
+</body>
+</html>
