@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conte">
+       
+        <section>
+            <header>
+                <h1>Verificação</h1>
+            </header>
+           <div id="sec">
+
+            <form id="dados" action="dados">
+                        <label for="nasc">Data De Nascimento:</label>
+                        <input type="number" name="nas" id="nasc" required min="1873" placeholder="xxxx"> 
+
+                        <div id="gen">
+                            <legend for="sexo">Genero:<legend>
+                            <input type="radio" name="sex" id="sexo-m" value="Masculino">
+                            <label for="sexo-m">Masculino</label>
+                            <br>
+                            <input type="radio" name="sex" id="sexo-f" value="Feminino">
+                            <label for="sexo-f">Feminino</label>
+                            <br>
+                            <input type="radio" name="sex" id="sexo-i" value="Indefinido">
+                            <label for="sexo-i">Indiferente</label>
+                        </div>
+                        <br>
+                        <input type="button" value="Verificar" id="ver" onclick="cal()">
+                </form>
+
+            </div>
+            <br>
+            <div id="sec1">
+              <img id="perfil" src="img/indefinido.jpeg" alt="Perfil">
+
+              <p id="msg"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Github Gabriel Dias Felipe</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
