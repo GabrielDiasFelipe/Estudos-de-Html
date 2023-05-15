@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conte">
+        <section>
+            <header>
+                <h1>Contagem Regressiva</h1>
+            </header>
+           <div id="sec">
+
+                <form id="conta" action="conta">
+
+                    <label for="ini">Incio</label>
+                    <input type="number" name="inicio" id="ini" required  placeholder="Inicio Da Contagem"> 
+                    
+                    <label for="fim">Fim</label>
+                    <input type="number" name="final" id="fim" required  placeholder="Fim Da Contagem"> 
+
+                    <label for="ini">Passo</label>
+                    <input type="pas" name="passo" id="pas" required  placeholder="Distancia dos Numeros"> 
+                    <br>
+                    <input type="button" value="Contar.." id="ver" onclick="cont()">
+                </form>
+
+            </div>
+            <br>
+            <div id="sec1">
+              <p id="msg"></p>
+              <br>
+              <a href="index.html" rel="prev">Voltar</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Github Gabriel Dias Felipe</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
