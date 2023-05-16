@@ -47,13 +47,12 @@ section{
     border-radius: 20px;
     text-align: center;
 
-    overflow: hidden;
+    overflow:hidden;
+
 }
 #sec{
     display:inline-block;
     width:100%;
-    
-    height: calc(100% - 20px);
     margin-top: 20px;
 }
 input#ini,input#fim,input#pas{
@@ -102,8 +101,6 @@ input#ini,input#fim,input#pas{
 
 footer{
     margin-top: 15px;
-    
-
 }
 footer > p{
     color: white;
