@@ -84,6 +84,7 @@ input#ini,input#fim,input#pas{
 }
 #msg{
     margin:10px;
+    font-size:13px;
 }
 #sec1 > a{
     width: 75%;
