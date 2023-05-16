@@ -10,21 +10,26 @@
 <body>
     <div id="conte">
         <header>
-            <h1>Hora do Dia</h1>
+            <h1>Tabuada</h1>
         </header>
-        <section>
+        <section id="set">
 
             <div id="sec">
-                
+                <label for="num">Numero:</label>
+                <input type="number" name="num" id="num" placeholder="xxx" >
+                <br>
+                <input type="button" value="Gerar Tabuada" onclick="cal()">
             </div>
             <br>
             <div id="sec1">
-                <img src="imagens/Manha.jpg" alt="Manha">
+                <select name="Tabuada" id="tab" size="10">
+                    <option value="padrao">Digite Um Numero Acima</option>
+                  </select>
             </div>
         </section>
 
         <footer>
-            <p>&copy; Github Gabriel Dias Felipe<q/p>
+            <p>&copy; Github Gabriel Dias Felipe</p>
         </footer>
     </div>
     <script src="script.js"></script>

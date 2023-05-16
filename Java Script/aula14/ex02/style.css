@@ -42,19 +42,19 @@ section{
 }
 #sec{
     display:inline-block;
-    
     padding:20px 20%;
     margin-top: 20px;
-    border: 1px solid black;
+
+}
+input{
+    text-align: center;
 }
 #sec1{
-    display:inline-block;
-
+    display:none;
     margin-top: 20px;
-    padding: 20px 20%;
-    border: 1px solid black;
 
 }
+
 footer{
     margin-top: 15px;
 
