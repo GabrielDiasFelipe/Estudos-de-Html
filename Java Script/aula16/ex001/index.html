@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001/Aula16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conte">
+        <header>
+            <h1 >Numero</h1>
+        </header>
+        <section>
+
+            <div id="sec">
+                <label for="num">Digite Um Numero <br>(Entre 1 ate 100)</label>
+                <input type="number" name="numero" id="num" placeholder="1 a 100"  required>
+                <br>
+                <input type="button" value="Enviar" onclick="enviar()">
+                <br>
+                <select name="sele" id="sel" size="8">
+                    
+                </select>
+                <br>
+                <input type="button" value="Finalizar" onclick="fim()">
+            </div>
+            <br>
+            <div id="sec1">
+                <p id="total">No total foram adicionados ... Numeros.</p>
+                <p id="soma"> A Soma Entre Eles Daria:</p>
+                <p id="media">A Media Deles é </p>
+                <p id="maior">O Maior Numero Foi:</p>
+                <p id="menor">O Menor Foi:</p>
+                
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Github Gabriel Dias Felipe</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
